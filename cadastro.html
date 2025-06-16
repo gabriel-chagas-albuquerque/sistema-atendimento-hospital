@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Atendimento Hospital</title>
+    <title>Cadastro</title>
 </head>
 <body>
-    <form action="">
+    <form action="" id="form-cadastro">
         <div>
             <label for="paciente">Nome do Paciente:</label>
             <input type="text" id="paciente">
         </div>
         <label for="motivo">Motivo do Atendimento:</label>
-        <input type="text" id="motivo">
-        <button type="button"><a href="./triagem.html" class="btn-cadastro">Cadastrar</a></button>
+        <textarea id="motivo"></textarea>
+        <button class="btn btn-cadastro" id="btn-cadastro">Cadastrar</button>
     </form>
+    <script src="./scripts/cadastro.js"></script>
 </body>
 </html>

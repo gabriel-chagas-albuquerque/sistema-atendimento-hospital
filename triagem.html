@@ -1,19 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <fieldset>
-        <legend>Classificação</legend>
-        <input type="radio" name="prioridade">
-        <label for="">Urgente</label>
-        <input type="radio" name="prioridade">
-        <label for="">Moderado</label>
-        <input type="radio" name="prioridade">
-        <label for="">Leve</label>
-    </fieldset>
+    <div>
+        <div id="info-usuarios">
+            
+            <p></p>
+        </div>
+        <form action="">
+            <fieldset>
+                <legend>Classificação</legend>
+                <div>
+                    <input type="radio" name="prioridade" class="classificacao" value="urgente">
+                    <label for="">Urgente</label>
+                    <input type="radio" name="prioridade" class="classificacao" value="moderado">
+                    <label for="">Moderado</label>
+                    <input type="radio" name="prioridade" class="classificacao" value="leve">
+                    <label for="">Leve</label>
+                </div>
+                <button id="btn-enviar" class="btn">Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+    <script src="./scripts/triagem.js"></script>
 </body>
 </html>
