@@ -125,7 +125,7 @@ button:disabled {
     cursor: not-allowed;
 }
 
-#form-cadastro a, .menu-nav a {
+.form a, .menu-nav a {
     text-align: center;
     padding: 8px 0;
     width: 100%;
@@ -137,7 +137,7 @@ button:disabled {
     font-size: 14px;
 }
 
-#form-cadastro a:hover, .menu-nav a:hover {
+.form a:hover, .menu-nav a:hover {
     background-color: #2980b9;
 }
 
@@ -188,7 +188,7 @@ button:disabled {
 }
 
 
-#form-cadastro, .menu-nav {
+.form, .menu-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -200,14 +200,14 @@ button:disabled {
     margin: auto;
 }
 
-#form-cadastro input {
+.form input {
     width: 250px;
     height: 30px;
     padding: 5px;
     border-radius: 5px;
 }
 
-#form-cadastro textarea{
+.form textarea{
     display: block;
     width: 250px;
     height: 100px;
@@ -216,9 +216,10 @@ button:disabled {
     padding: 5px;
     border-radius: 5px;
     margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#form-cadastro textarea::placeholder {
+.form textarea::placeholder {
     font-family: Arial, Helvetica, sans-serif;
 }
 

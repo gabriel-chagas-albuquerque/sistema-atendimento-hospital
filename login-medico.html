@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Login do Médico</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <form id="form">
-        <label for="Login">Login:</label>
-        <input type="text" id="login">
-        <label for="password">Senha:</label>
-        <input type="password" id="password">
+    <div class="main-container">
+      <h1>Portal do Médico - Login</h1>
+      <form action="" id="form-cadastro" class="form">
+        <div>
+            <label for="Login">Login</label>
+            <input type="text" id="login">
+        </div>
+        <div>
+            <label for="password">Senha</label>
+            <input type="password" id="password">
+        </div>
         <button type="button" id="btn-login">Fazer Login</button>
-    </form>
+      </form>
+      <footer>
+        <a href="./index.html">Página Inicial</a>
+      </footer>
+    </div>
     <script src="./scripts/login-medico.js"></script>
 </body>
 </html>
