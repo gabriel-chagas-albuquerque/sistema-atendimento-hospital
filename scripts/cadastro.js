@@ -12,8 +12,14 @@ botaoCadastro.addEventListener('click', (e) => {
 
     //Resetar o formulário
     const form = document.querySelector('#form-cadastro')
-    form.reset()
+    
     
     // Redireciona para a página de triagem
-    window.location.href = './triagem.html'
+    if(paciente && motivoAtendimento) {
+        window.location.href = './triagem.html'
+        form.reset()
+    }else {
+        alert("Preenchimento obrigatório dos campos nome do paciente e motivo do atendimento")
+    }
+    
 })
