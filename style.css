@@ -97,11 +97,16 @@ button:disabled {
     cursor: not-allowed;
 }
 
+#medico{
+    text-align: center;
+}
+
 #filaDeEspera {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: 15px;
+    width: 400px;
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
@@ -130,11 +135,27 @@ button:disabled {
     font-size: medium;
 
 }
+
+#form-cadastro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: medium;
+}
+
+#form-cadastro textarea{
+    display: block;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
 footer {
     margin-top: 40px;
     padding-top: 10px;
     border-top: 1px solid #ccc;
-    text-align: center;
+    text-align: center; 
     font-size: 14px;
     color: #777;
 }
