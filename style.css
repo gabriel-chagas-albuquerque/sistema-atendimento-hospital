@@ -23,13 +23,11 @@ h4 {
 a {
     color: #3498db;
     text-decoration: none;
-    transition: color 0.3s ease;
     font-weight: bold;
 }
 
 a:hover {
     color: #2980b9;
-    text-decoration: underline;
 }
 
 button {
@@ -92,4 +90,9 @@ fieldset {
     border-radius: 6px;
     padding: 15px;
     margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
 }
