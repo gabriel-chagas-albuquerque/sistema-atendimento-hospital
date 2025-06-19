@@ -10,7 +10,7 @@ let pacienteEmAtendimento = null;
 
 
 function mostrarFila() {
-    filaDeEspera.innerHTML = '';
+    filaDeEspera.innerHTML = '<h3>Fila de Espera:</h3>';
     fila.sort((a, b) => b.prioridadeCode - a.prioridadeCode);
     fila.forEach((paciente, index) => {
         const div = document.createElement('div');
