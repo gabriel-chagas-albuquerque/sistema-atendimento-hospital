@@ -6,25 +6,59 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #b6dbf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #333;
     padding: 20px;
     line-height: 1.6;
+}
+
+#info-usuarios {
+    background-color: #ffffffcc;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow:0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+
 }
 
 h1,
 h2,
 h3,
 h4 {
+    text-align: center;
+    font-size: 30px;
     color: #2c3e50;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 a {
-    color: #3498db;
+    color: #0b0c0c;
     text-decoration: none;
     transition: color 0.3s ease;
     font-weight: bold;
+}
+
+label {
+    font-size: 1.1em;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.triagem {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.triagem label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 a:hover {
@@ -78,6 +112,12 @@ button:disabled {
     margin-top: 20px;
 }
 
+#triagem {
+    flex-direction: column;
+    text-align: center;
+    font-size: medium;
+
+}
 footer {
     margin-top: 40px;
     padding-top: 10px;
