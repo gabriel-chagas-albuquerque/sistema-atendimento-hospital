@@ -4,6 +4,7 @@ const filaDeEspera = document.getElementById('filaDeEspera');
 const atendimento = document.getElementById('atendimentoAtual');
 const nomeAtendimento = document.getElementById('nomeAtendimento');
 const descricaoAtendimento = document.getElementById('descricaoAtendimento');
+const botaoFinalizar = document.getElementById('finalizarAtendimento');
 
 
 let pacienteEmAtendimento = null;
@@ -35,5 +36,12 @@ function iniciarAtendimento(index) {
     descricaoAtendimento.textContent = `Motivo: ${pacienteEmAtendimento.descricao}`;
     mostrarFila();
   }
+
+botaoFinalizar.addEventListener('click', () => {
+    pacienteEmAtendimento = null;
+    nomeAtendimento.textContent = '';
+    descricaoAtendimento.textContent = '';
+    mostrarFila();
+});
 
 mostrarFila();
