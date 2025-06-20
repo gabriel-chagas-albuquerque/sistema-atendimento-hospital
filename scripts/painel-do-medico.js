@@ -11,7 +11,7 @@ let pacienteEmAtendimento = JSON.parse(localStorage.getItem("pacienteEmAtendimen
 function mostrarFila() {
   filaDeEspera.innerHTML = "<h3>Fila de Espera:</h3>";
   const filaOrdenada = fila.sort((a, b) => b.prioridadeCode - a.prioridadeCode);
-  const filaFiltrada = filaOrdenada.filter((paciente) => paciente.id <= 3)
+  const filaFiltrada = filaOrdenada.slice(0,3)
 
 
   if (filaFiltrada.length === 0) {

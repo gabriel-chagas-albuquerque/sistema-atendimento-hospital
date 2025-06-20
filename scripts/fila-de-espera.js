@@ -8,8 +8,7 @@ function mostrarFila() {
     filaDeEspera.innerHTML = `<h2>Não há pacientes na fila!</h2>`;
   } else {
     const filaOrdenada = fila.sort((a, b) => b.prioridadeCode - a.prioridadeCode);
-    
-    const filaFiltrada = filaOrdenada.filter((paciente) => paciente.id<=4 )
+    const filaFiltrada = filaOrdenada.slice(0,3)
     filaFiltrada.forEach((paciente) => {
       const div = document.createElement("div");
       div.classList.add("paciente");
