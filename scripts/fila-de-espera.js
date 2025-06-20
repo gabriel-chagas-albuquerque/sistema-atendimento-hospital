@@ -9,7 +9,8 @@ function mostrarFila() {
   } else {
     const filaOrdenada = fila.sort((a, b) => b.prioridadeCode - a.prioridadeCode);
     
-    filaOrdenada.forEach((paciente) => {
+    const filaFiltrada = filaOrdenada.filter((paciente) => paciente.id<=4 )
+    filaFiltrada.forEach((paciente) => {
       const div = document.createElement("div");
       div.classList.add("paciente");
       div.classList.add(`${paciente.prioridade}`)

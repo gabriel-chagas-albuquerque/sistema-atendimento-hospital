@@ -1,4 +1,4 @@
-let fila = JSON.parse(localStorage.getItem("filaDeAtendimento")) || [];
+const fila = JSON.parse(localStorage.getItem("filaDeAtendimento")) || [];
 
 const filaDeEspera = document.getElementById("filaDeEspera");
 const atendimento = document.getElementById("atendimentoAtual");
@@ -10,8 +10,9 @@ let pacienteEmAtendimento = null;
 
 function mostrarFila() {
   filaDeEspera.innerHTML = "<h3>Fila de Espera:</h3>";
-  fila.sort((a, b) => b.prioridadeCode - a.prioridadeCode);
-  fila.forEach((paciente, index) => {
+  const filaOrdenada = fila.sort((a, b) => b.prioridadeCode - a.prioridadeCode);
+  const filaFiltrada = filaOrdenada.filter((paciente) => paciente.id <=3)
+  filaFiltrada.forEach((paciente, index) => {
     const div = document.createElement("div");
     div.classList.add(`paciente`);
     div.classList.add(`${paciente.prioridade}`)
