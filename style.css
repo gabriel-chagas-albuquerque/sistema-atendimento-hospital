@@ -222,7 +222,8 @@ button:disabled {
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: 15px;
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
@@ -266,7 +267,8 @@ button:disabled {
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: 15px;
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
@@ -280,7 +282,7 @@ button:disabled {
 
 .container, .container-index {
     height: 80px;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -307,13 +309,13 @@ button:disabled {
     border-bottom-right-radius: 10px;
     background-color: #232350;
     padding: 10px 30px 20px;
-    width: 1042px;
+    width: 100%;
     
 }
 
 
 .form input {
-    width: 400px;
+    width: 100%;
     height: 30px;
     padding: 5px;
     border-radius: 5px;
@@ -321,7 +323,7 @@ button:disabled {
 
 .form textarea{
     display: block;
-    width: 400px;
+    width: 100%;
     height: 100px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     resize: none;
@@ -389,3 +391,10 @@ footer {
     background-color: rgba(0, 128, 0, 0.6);
 }
 
+.form{
+    width: 100%;
+    max-width: 600px;
+}
+.form-itens {
+    width: 100%;
+}
