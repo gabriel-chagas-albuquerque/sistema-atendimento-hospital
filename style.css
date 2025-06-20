@@ -378,14 +378,14 @@ footer {
 }
 
 #atendimentoAtual.paciente.urgente, .paciente.urgente {
-    background-color: rgba(255, 35, 35, 0.6);
+    background-color: rgba(red);
 }
 
 #atendimentoAtual.paciente.moderado, .paciente.moderado {
-    background-color: rgba(236, 236, 28, 0.6);
+    background-color: rgba(236, 236, 28);
 }
 
 #atendimentoAtual.paciente.leve, .paciente.leve {
-    background-color: rgba(0, 128, 0, 0.6);
+    background-color: rgba(18, 163, 18);
 }
 
