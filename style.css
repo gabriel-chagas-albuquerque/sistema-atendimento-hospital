@@ -176,6 +176,7 @@ button {
     width: 200px;
     transition: ease 0.3s;
     font-size: 15px;
+    margin: 0 auto;
 }
 
 button:hover {
