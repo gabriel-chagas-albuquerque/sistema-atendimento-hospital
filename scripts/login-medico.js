@@ -8,6 +8,11 @@ const contasMedicos = [
         id:2,
         login: "mariaalice12@mail.com",
         senha: "Dorinha"
+    },
+    {
+        id:3,
+        login: "admin",
+        senha: "admin"
     }
 ]
 

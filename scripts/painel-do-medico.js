@@ -12,6 +12,13 @@ function mostrarFila() {
   filaDeEspera.innerHTML = "<h3>Fila de Espera:</h3>";
   const filaOrdenada = fila.sort((a, b) => b.prioridadeCode - a.prioridadeCode);
   const filaFiltrada = filaOrdenada.filter((paciente) => paciente.id <=3)
+
+  
+  if (filaFiltrada.length === 0) {
+    filaDeEspera.innerHTML = "<h3>Fila de Espera:</h3><p>Nenhum paciente na fila de espera</p>"
+    return;
+  }
+
   filaFiltrada.forEach((paciente, index) => {
     const div = document.createElement("div");
     div.classList.add(`paciente`);
@@ -42,6 +49,18 @@ function mostrarFila() {
   });
 }
 
+function atualizarAtendimento(){
+  if (pacienteEmAtendimento) {
+    atendimento.style.display = "block";
+    nomeAtendimento.textContent = `Nome: ${pacienteEmAtendimento.nome}`;
+    descricaoAtendimento.textContent = `Motivo: ${pacienteEmAtendimento.descricao}`;
+   } else {
+    atendimento.style.display = "block";
+    nomeAtendimento.textContent = "Nenhum paciente em atendimento";
+    descricaoAtendimento.textContent = "";
+  }
+}
+
 function iniciarAtendimento(index) {
   pacienteEmAtendimento = fila[index];
   
@@ -55,9 +74,9 @@ function iniciarAtendimento(index) {
 
 botaoFinalizar.addEventListener("click", () => {
   pacienteEmAtendimento = null;
-  nomeAtendimento.textContent = "";
-  descricaoAtendimento.textContent = "";
+  atualizarAtendimento();
   mostrarFila();
 });
 
+atualizarAtendimento()
 mostrarFila();
