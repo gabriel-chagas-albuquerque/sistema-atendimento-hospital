@@ -376,15 +376,15 @@ footer {
     margin: 10px 0 5px;
 }
 
-.paciente.urgente {
+#atendimentoAtual.paciente.urgente, .paciente.urgente {
     background-color: rgba(255, 35, 35, 0.6);
 }
 
-.paciente.moderado {
-    background-color: rgb(236, 236, 28, 0.6);
+#atendimentoAtual.paciente.moderado, .paciente.moderado {
+    background-color: rgba(236, 236, 28, 0.6);
 }
 
-.paciente.leve {
-    background-color: rgb(0, 128, 0, 0.6)
+#atendimentoAtual.paciente.leve, .paciente.leve {
+    background-color: rgba(0, 128, 0, 0.6);
 }
 
