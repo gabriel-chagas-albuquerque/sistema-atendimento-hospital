@@ -20,7 +20,6 @@ btnLogin.addEventListener('click', (e) => {
     
     
     const resLogin = contasMedicos.find((contaMedico) => contaMedico.login === login && contaMedico.senha === password)
-    console.log(resLogin);
     
     if(!resLogin) {
         alert("Email ou senha incorretos!")

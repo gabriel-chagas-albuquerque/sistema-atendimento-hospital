@@ -3,9 +3,17 @@ const motivo = localStorage.getItem("motivo");
 
 const infoUsuarios = document.querySelector("#info-usuarios");
 if (paciente && motivo) {
-  infoUsuarios.innerHTML = `<h2 id="nome-paciente">${paciente}</h2>
-                              <p id="motivo-atendimento">${motivo}</p>`;
-}
+  infoUsuarios.innerHTML = `  <h2>Informações do Paciente</h2>
+                              <div class="info-paciente">
+                              <h3>Nome:<h3>
+                              <p id="nome-paciente">${paciente}</p>
+                              </div>
+                              <div class="info-paciente">
+                              <h3>Motivo:</h3>
+                              <p id="motivo-atendimento">${motivo}</p>
+                              </div>
+                              `
+
 
 const filaDeAtendimento =
   JSON.parse(localStorage.getItem("filaDeAtendimento")) || [];
@@ -42,3 +50,7 @@ botaoEnviar.addEventListener("click", (e) => {
     alert("Selecione uma prioridade!");
   }
 });
+}else{
+  alert("Preencha o cadastro corretamente!")
+  window.location.href = "./cadastro.html"
+}

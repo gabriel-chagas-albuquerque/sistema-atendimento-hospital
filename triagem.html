@@ -1,36 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Triagem</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div>
-        <div id="info-usuarios">
-            
-            <p></p>
-        </div>
-        <form action="">
-            <fieldset>
-                <legend>Classificação</legend>
-                <div id="triagem">
-                    <input type="radio" name="prioridade" class="classificacao" value="urgente">
-                    <label for="">Urgente</label>
-                    <input type="radio" name="prioridade" class="classificacao" value="moderado">
-                    <label for="">Moderado</label>
-                    <input type="radio" name="prioridade" class="classificacao" value="leve">
-                    <label for="">Leve</label>
-                </div>
-                <button id="btn-enviar" class="btn">Enviar</button>
-
-            </fieldset>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Triagem</h1>
+      <div class="container-usuarios">
+        <div id="info-usuarios"></div>
+        <form action="" class="form-triagem">
+          <h2>Classificação</h2>
+          <ul id="triagem" class="menu">
+            <li>
+              <label for="urgente"
+                ><div class="urgente"></div>
+                Urgente</label
+              >
+              <input
+                type="radio"
+                name="prioridade"
+                id="urgente"
+                class="classificacao"
+                value="urgente"
+              />
+            </li>
+            <li>
+              <label for="moderado"
+                ><div class="moderado"></div>
+                Moderado</label
+              >
+              <input
+                type="radio"
+                name="prioridade"
+                id="moderado"
+                class="classificacao"
+                value="moderado"
+              />
+            </li>
+            <li>
+              <label for="leve"
+                ><div class="leve"></div>
+                Leve</label
+              >
+              <input
+                type="radio"
+                name="prioridade"
+                id="leve"
+                class="classificacao"
+                value="leve"
+              />
+            </li>
+          </ul>
+          <button id="btn-enviar" class="btn">Enviar</button>
         </form>
-          <footer>
-                 <a href="./index.html">Página Inicial</a>
-            </footer>
+      </div>
+      <footer>
+        <a href="./index.html">Página Inicial</a>
+      </footer>
     </div>
     <script src="./scripts/triagem.js"></script>
-</body>
+  </body>
 </html>
